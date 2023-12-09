@@ -1,0 +1,335 @@
+PL/SQL cheat sheet
+
+-Estructura basica:
+
+	DECLARE
+	--seccion declarativ
+		
+	BEGIN
+	--seccion ejecutable
+
+	EXCEPTION
+	--manejo de errores y situaciones
+		
+	END;
+	--finalizacion del programa
+	
+-Pero admite esta (que es un ejemplo de BLOQUE ANONIMO):
+
+	BEGIN
+	--seccion ejecutable
+
+	END;
+	--finalizacion del programa
+	
+*Bloque anonimo: se construyen de forma dinamica y se ejecutan una sola vez
+y no tienen nombre.
+
+*Bloque con nombre: dinamicos y se ejecutan una sola vez.
+
+*Triggers(disparadores): Bloque con nombre que se almacena tambien en
+la base de datos, no suelen cambiar despues de su eejcucion y se ejecutan 
+varias veces.
+
+
+**********************************************************************
+
+-Ejercicios de Diego
+
+1-Suma dos numeros
+
+-- Declaración de un procedimiento en PL/SQL
+CREATE OR REPLACE PROCEDURE mostrar_suma(p_numero1 IN NUMBER, p_numero2 IN NUMBER) AS
+  -- Declaración de variables
+  v_suma NUMBER;
+
+BEGIN
+  -- Sección ejecutable
+  -- Calcula la suma de los dos números
+  v_suma := p_numero1 + p_numero2;
+
+  -- Visualiza la suma
+  DBMS_OUTPUT.PUT_LINE('La suma de ' || p_numero1 || ' y ' || p_numero2 || ' es: ' || v_suma);
+
+EXCEPTION
+  -- Manejo de errores (puedes personalizar según tus necesidades)
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
+
+END mostrar_suma;
+/
+
+-- Llamada al procedimiento desde un bloque anónimo
+BEGIN
+  mostrar_suma(5, 7);
+END;
+/
+
+
+----------------------------------------------------------------------
+
+2-Devolver una cadena al reves
+
+-- Declaración de un procedimiento en PL/SQL
+CREATE OR REPLACE PROCEDURE mostrar_al_reves(p_cadena IN VARCHAR2) AS
+  -- Declaración de variables
+  v_cadena_al_reves VARCHAR2(4000) := '';
+  v_length NUMBER;
+
+BEGIN
+  -- Sección ejecutable
+  -- Calcula la longitud de la cadena
+  v_length := LENGTH(p_cadena);
+
+  -- Invierte la cadena usando un bucle
+  FOR i IN REVERSE 1..v_length LOOP
+    v_cadena_al_reves := v_cadena_al_reves || SUBSTR(p_cadena, i, 1);
+  END LOOP;
+
+  -- Visualiza la cadena al revés
+  DBMS_OUTPUT.PUT_LINE('La cadena al revés es: ' || v_cadena_al_reves);
+
+EXCEPTION
+  -- Manejo de errores (puedes personalizar según tus necesidades)
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
+
+END mostrar_al_reves;
+/
+
+-- Llamada al procedimiento desde un bloque anónimo
+BEGIN
+  mostrar_al_reves('Hola mundo');
+END;
+/
+
+----------------------------------------------------------------------
+
+3-Transformar en funciones los dos ejercicios anteriores para que retornen
+los valores que mostraban los procedimientos
+
+-- Declaración de una función en PL/SQL para la suma
+CREATE OR REPLACE FUNCTION obtener_suma(p_numero1 IN NUMBER, p_numero2 IN NUMBER) RETURN NUMBER IS
+  -- Declaración de variable local
+  v_suma NUMBER;
+
+BEGIN
+  -- Sección ejecutable
+  -- Calcula la suma de los dos números
+  v_suma := p_numero1 + p_numero2;
+
+  -- Retorna el valor de la suma
+  RETURN v_suma;
+
+EXCEPTION
+  -- Manejo de errores (puedes personalizar según tus necesidades)
+  WHEN OTHERS THEN
+    -- Puedes registrar el error o manejarlo de otra manera
+    RETURN NULL;
+
+END obtener_suma;
+/
+DECLARE
+  resultado NUMBER;
+BEGIN
+  resultado := obtener_suma(5, 7);
+  DBMS_OUTPUT.PUT_LINE('La suma es: ' || resultado);
+END;
+/
+
+----------------------------------------------------------------------
+3-Transformar en funciones los dos ejercicios anteriores para que retornen
+los valores que mostraban los procedimientos
+
+-- Declaración de una función en PL/SQL para invertir una cadena
+CREATE OR REPLACE FUNCTION obtener_cadena_al_reves(p_cadena IN VARCHAR2) RETURN VARCHAR2 IS
+  -- Declaración de variables locales
+  v_cadena_al_reves VARCHAR2(4000) := '';
+  v_length NUMBER;
+
+BEGIN
+  -- Sección ejecutable
+  -- Calcula la longitud de la cadena
+  v_length := LENGTH(p_cadena);
+
+  -- Invierte la cadena usando un bucle
+  FOR i IN REVERSE 1..v_length LOOP
+    v_cadena_al_reves := v_cadena_al_reves || SUBSTR(p_cadena, i, 1);
+  END LOOP;
+
+  -- Retorna la cadena invertida
+  RETURN v_cadena_al_reves;
+
+EXCEPTION
+  -- Manejo de errores (puedes personalizar según tus necesidades)
+  WHEN OTHERS THEN
+    -- Puedes registrar el error o manejarlo de otra manera
+    RETURN NULL;
+
+END obtener_cadena_al_reves;
+/
+
+DECLARE
+  cadena_invertida VARCHAR2(4000);
+BEGIN
+  cadena_invertida := obtener_cadena_al_reves('Hola mundo');
+  DBMS_OUTPUT.PUT_LINE('La cadena al revés es: ' || cadena_invertida);
+END;
+/
+
+----------------------------------------------------------------------
+
+4-Escribe una funcion que reciba una fecha y devuelva el año, 
+en numero, correspondiente a esa fecha:
+
+
+-- Declaración de una función en PL/SQL para obtener el año de una fecha
+CREATE OR REPLACE FUNCTION obtener_anio(p_fecha IN DATE) RETURN NUMBER IS
+  -- Declaración de variable local
+  v_anio NUMBER;
+
+BEGIN
+  -- Sección ejecutable
+  -- Extrae el año de la fecha
+  v_anio := EXTRACT(YEAR FROM p_fecha);
+
+  -- Retorna el año como número
+  RETURN v_anio;
+
+EXCEPTION
+  -- Manejo de errores (puedes personalizar según tus necesidades)
+  WHEN OTHERS THEN
+    -- Puedes registrar el error o manejarlo de otra manera
+    RETURN NULL;
+
+END obtener_anio;
+/
+
+DECLARE
+  fecha_ingresada DATE := TO_DATE('2023-12-09', 'YYYY-MM-DD');
+  anio_resultante NUMBER;
+BEGIN
+  anio_resultante := obtener_anio(fecha_ingresada);
+  DBMS_OUTPUT.PUT_LINE('El año correspondiente a la fecha es: ' || anio_resultante);
+END;
+/
+
+----------------------------------------------------------------------
+
+5-Escribe un bloque PL/SQL que haga uso de la funcion anterior.
+
+DECLARE
+  fecha_ingresada DATE := TO_DATE('2023-12-09', 'YYYY-MM-DD');
+  anio_resultante NUMBER;
+BEGIN
+  -- Llama a la función para obtener el año de la fecha
+  anio_resultante := obtener_anio(fecha_ingresada);
+
+  -- Verifica si se obtuvo un resultado válido
+  IF anio_resultante IS NOT NULL THEN
+    DBMS_OUTPUT.PUT_LINE('El año correspondiente a la fecha ' || TO_CHAR(fecha_ingresada, 'DD-MON-YYYY') || ' es: ' || anio_resultante);
+  ELSE
+    DBMS_OUTPUT.PUT_LINE('Error al obtener el año.');
+  END IF;
+
+EXCEPTION
+  -- Manejo de errores (puedes personalizar según tus necesidades)
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
+
+END;
+/
+
+----------------------------------------------------------------------
+
+9-Funcion que devulva solamente caracteres alfabeticos, sustituyendo
+cualquier otro caracter por blancos a partir de una cadena que le pases:
+
+-- Declaración de una función en PL/SQL para obtener solo caracteres alfabéticos
+CREATE OR REPLACE FUNCTION obtener_alfabeticos(p_cadena IN VARCHAR2) RETURN VARCHAR2 IS
+  -- Declaración de variable local
+  v_cadena_alfabetica VARCHAR2(4000) := '';
+  v_longitud NUMBER;
+
+BEGIN
+  -- Sección ejecutable
+  -- Calcula la longitud de la cadena
+  v_longitud := LENGTH(p_cadena);
+
+  -- Itera sobre cada carácter de la cadena
+  FOR i IN 1..v_longitud LOOP
+    -- Si el carácter es alfabético, agrégalo a la nueva cadena
+    IF REGEXP_LIKE(SUBSTR(p_cadena, i, 1), '[[:alpha:]]') THEN
+      v_cadena_alfabetica := v_cadena_alfabetica || SUBSTR(p_cadena, i, 1);
+    ELSE
+      -- Si no es alfabético, agrega un espacio en blanco
+      v_cadena_alfabetica := v_cadena_alfabetica || ' ';
+    END IF;
+  END LOOP;
+
+  -- Retorna la cadena resultante
+  RETURN v_cadena_alfabetica;
+
+EXCEPTION
+  -- Manejo de errores (puedes personalizar según tus necesidades)
+  WHEN OTHERS THEN
+    -- Puedes registrar el error o manejarlo de otra manera
+    RETURN NULL;
+
+END obtener_alfabeticos;
+/
+
+DECLARE
+  cadena_original VARCHAR2(4000) := 'Hola 123 mundo!';
+  cadena_alfabetica VARCHAR2(4000);
+BEGIN
+  cadena_alfabetica := obtener_alfabeticos(cadena_original);
+  DBMS_OUTPUT.PUT_LINE('Cadena original: ' || cadena_original);
+  DBMS_OUTPUT.PUT_LINE('Cadena alfabética: ' || cadena_alfabetica);
+END;
+/
+
+----------------------------------------------------------------------
+
+11-Escribe un procedimiento que modifique la localidad de un departamento. 
+El procedimiento recibira como parametros el numero del departamento y 
+la nueva localidad:
+
+-- Declaración de un procedimiento en PL/SQL para modificar la localidad de un departamento
+CREATE OR REPLACE PROCEDURE modificar_localidad(
+    p_numero_departamento IN NUMBER,
+    p_nueva_localidad IN VARCHAR2
+) AS
+BEGIN
+  -- Sección ejecutable
+  -- Actualiza la localidad del departamento en la base de datos
+  UPDATE departamentos
+  SET localidad = p_nueva_localidad
+  WHERE departamento_id = p_numero_departamento;
+
+  -- Comprueba si se realizaron cambios
+  IF SQL%ROWCOUNT = 1 THEN
+    DBMS_OUTPUT.PUT_LINE('Localidad del departamento ' || p_numero_departamento || ' modificada a: ' || p_nueva_localidad);
+  ELSE
+    DBMS_OUTPUT.PUT_LINE('No se encontró el departamento ' || p_numero_departamento);
+  END IF;
+
+EXCEPTION
+  -- Manejo de errores (puedes personalizar según tus necesidades)
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
+
+END modificar_localidad;
+/
+
+
+-- Llamada al procedimiento desde un bloque anónimo
+BEGIN
+  modificar_localidad(10, 'Nueva Localidad');
+END;
+/
+
+
+**********************************************************************
+
+-Ejercicios mas comunes de PL/SQL
