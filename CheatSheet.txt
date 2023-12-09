@@ -22,6 +22,10 @@ PL/SQL cheat sheet
 	END;
 	--finalizacion del programa
 	
+-Para señalar que la salida de datos sea por la consola:
+
+set serveroutput on;
+	
 *Bloque anonimo: se construyen de forma dinamica y se ejecutan una sola vez
 y no tienen nombre.
 
@@ -31,14 +35,103 @@ y no tienen nombre.
 la base de datos, no suelen cambiar despues de su eejcucion y se ejecutan 
 varias veces.
 
+********************************************************************
+ -Ejemplo hello world
+set serveroutput on;
+CREATE OR REPLACE PROCEDURE saludo 
+AS 
+BEGIN 
+   dbms_output.put_line('Hola a todos'); 
+END saludo; 
 
 
--PROCEDURES
+
+**********************************************************************
+
+-PROCEDURES: Bloque de codigo que contiene instrucciones SQL y PLSQL
+y pueden recibir parametros.
+
+-FUNCTIONS: Bloque de codigo que contiene instrucciones SQL y PLSQL
+y pueden recibir parametros.
 
 
--FUNCTIONS
+-Diferencias:
+
+1-Valor de retorno
+
+	P - No tiene valor de retorno explicito.
+	Pueden realizar acciones, modificar datos, 
+	pero no devuelven un valor como resultado. Se 
+	utilizan principalmente para realizar tareas y 
+	realizar operaciones.
+	
+	F - Debe tener valor de retorno explicito.Devuelven 
+	un valor al final de la ejecución. Son útiles cuando 
+	necesitas obtener un resultado específico.
+	
+2-Uso en consultas SQL
+	
+	P - No se pueden llamar directamente desde una consulta. 
+	Son invocados mediante una sentencia EXECUTE o desde 
+	otro bloque PL/SQL.
+	
+	F - Pueden llamarse directamente desde una consulta SQL.
+	Pueden formar parte de una expresión SQL y se utilizan 
+	para calcular valores.
+	
+3-Sintaxis de invocacion
+
+	P - Se llaman con una sentencia EXECUTE o simplemente
+	por su nombre en un bloque PL/SQL.
+	
+	F - Se utilizan en expresiones y se llaman como parte de una
+	consulta SQL. Tambien pueden ser llamadas desde un bloque
+	PL/SQL de la misma manera que un procedimiento.
+
+--------------------------------------------------------------------
+
+-Ejemplos de diferencicion:
+	
+	Procedimiento
+	
+CREATE OR REPLACE PROCEDURE ejemplo_procedimiento(p_numero IN NUMBER) AS
+BEGIN
+  DBMS_OUTPUT.PUT_LINE('El número proporcionado es: ' || p_numero);
+END ejemplo_procedimiento;
+/
+
+	Funcion
+
+CREATE OR REPLACE FUNCTION ejemplo_funcion(p_numero IN NUMBER) RETURN NUMBER IS
+  v_resultado NUMBER;
+BEGIN
+  v_resultado := p_numero * 2;
+  RETURN v_resultado;
+END ejemplo_funcion;
+/
 
 
+--------------------------------------------------------------------
+
+-Ejemplos de una llamada a cada uno
+
+	Procedimiento
+	
+BEGIN
+  ejemplo_procedimiento(10);
+END;
+/
+
+	
+	Funcion
+	
+DECLARE
+  resultado NUMBER;
+BEGIN
+  resultado := ejemplo_funcion(10);
+  DBMS_OUTPUT.PUT_LINE('El resultado de la función es: ' || resultado);
+END;
+/
 
 
 **********************************************************************
