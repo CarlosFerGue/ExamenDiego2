@@ -58,7 +58,8 @@ EXECUTE saludo;
 
 **********************************************************************
 
--Ejemplo Procedimiento almacenado 
+-Ejemplo Procedimiento almacenado en el que accedemos a una tabla
+y le sumamos a los salarios un 10% de lo que son
 
 BBDD
 
