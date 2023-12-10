@@ -121,7 +121,13 @@ drop procedure ingresoemple;
 
 -----------------------------------------------------------------
 
--Ejemplo con variables
+-Ejemplo con variables (pasar datos de una tabla a otra)
+
+CREATE TABLE tabla1 (
+  titulo VARCHAR2(40),
+  precio NUMBER(6,2)
+);
+
 
 -- Crear la tabla
 CREATE TABLE libros (
@@ -132,20 +138,29 @@ CREATE TABLE libros (
 );
 
 -- Inserts
-INSERT INTO libros (id_libro, titulo, autor, precio) VALUES (1, 'Libro 1', 'Autor 1', 20.50);
-INSERT INTO libros (id_libro, titulo, autor, precio) VALUES (2, 'Libro 2', 'Autor 2', 15.75);
-INSERT INTO libros (id_libro, titulo, autor, precio) VALUES (3, 'Libro 3', 'Autor 3', 30.00);
+INSERT INTO libros (id_libro, titulo, autor, precio) VALUES (1, 'Libro 1', 'Autor1', 20.50);
+INSERT INTO libros (id_libro, titulo, autor, precio) VALUES (2, 'Libro 2', 'Autor2', 15.75);
+INSERT INTO libros (id_libro, titulo, autor, precio) VALUES (3, 'Libro 3', 'Autor3', 30.00);
 
 create or replace procedure autorlibro(atitulo in varchar2)
-as
-v_autor varchar2(20);
-begin	
-	select autor into v_autor from libros where titulo=atitulo;
-	insert into tabal1
-	select titulo, precio from libros
-	where autor=v_autor;
-end autorlibro;
+ as
+   v_autor varchar2(20);
+ begin
+  select autor into v_autor from libros where titulo=atitulo;
+  --en esta linea hemos dado valor a la variable
+  insert into tabla1
+   select titulo,precio
+   from libros
+   where autor=v_autor;
+   --Y ahi se la pasamos a la tabla nueva
+ end autorlibro;
+ 
+ BEGIN
+  autorlibro('Libro1');
+END;
+/
 
+select * from tabla1;
 **********************************************************************
 
 -PROCEDURES: Bloque de codigo que contiene instrucciones SQL y PLSQL
