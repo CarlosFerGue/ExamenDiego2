@@ -37,6 +37,7 @@ varias veces.
 
 ********************************************************************
  -Ejemplo hello world
+ 
 set serveroutput on;
 CREATE OR REPLACE PROCEDURE saludo 
 AS 
@@ -44,6 +45,47 @@ BEGIN
    dbms_output.put_line('Hola a todos'); 
 END saludo; 
 
+	-Con eso creamos el procedure, lo ejecutamos para que se compile y despues:
+ 
+BEGIN
+	saludo;
+END;
+
+
+EXECUTE saludo;
+
+	-Con eso lo ejecutamos
+
+**********************************************************************
+
+-Ejemplo Procedimiento almacenado 
+
+BBDD
+
+DROP TABLE PERSONAL cascade constraints; 
+
+CREATE TABLE PERSONAL (
+ COD_CENTRO   NUMBER(4) NOT NULL,
+ DNI NUMBER(10),
+ APELLIDOS VARCHAR2(30),
+ FUNCION VARCHAR2(15),
+ SALARIO NUMBER (10) 
+);
+
+INSERT INTO PERSONAL VALUES (10,1112345,'Mart�nez Salas, Fernando',
+'PROFESOR', 220000);
+INSERT INTO PERSONAL VALUES (10,4123005,'Bueno Zarco, Elisa', 
+'PROFESOR', 220000);
+INSERT INTO PERSONAL VALUES (10,4122025,'Montes Garc�a, M.Pilar', 
+'PROFESOR', 220000);
+
+CREATE OR REPLACE PROCEDURE aumento_salario
+AS
+BEGIN	
+	update personal set salario = salario + (salario*0.1);
+END aumento_salario;
+	
+execute aumento_salario;
 
 
 **********************************************************************
