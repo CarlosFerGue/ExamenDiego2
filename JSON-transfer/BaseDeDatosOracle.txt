@@ -1,0 +1,71 @@
+-- Crear secuencias
+CREATE SEQUENCE seq_articulos START WITH 11;
+CREATE SEQUENCE seq_dir_envio START WITH 36;
+CREATE SEQUENCE seq_particulares START WITH 11;
+CREATE SEQUENCE seq_tickets START WITH 13;
+
+-- Crear tabla para la tabla `articulos`
+CREATE TABLE articulos (
+  id_articulo NUMBER PRIMARY KEY,
+  nombre VARCHAR2(50),
+  precio NUMBER,
+  stock NUMBER
+);
+
+-- Crear tabla para la tabla `dir_envio`
+CREATE TABLE dir_envio (
+  id_direccion NUMBER PRIMARY KEY,
+  nombre VARCHAR2(60) UNIQUE
+);
+
+-- Crear tabla para la tabla `particulares`
+CREATE TABLE particulares (
+  id_particular NUMBER PRIMARY KEY,
+  nombre VARCHAR2(35),
+  dni VARCHAR2(9) UNIQUE,
+  telefono VARCHAR2(9),
+  direccion VARCHAR2(45)
+);
+
+-- Crear tabla para la tabla `tickets`
+CREATE TABLE tickets (
+  id_ticket NUMBER PRIMARY KEY,
+  fecha DATE,
+  titular VARCHAR2(40),
+  num_tarjeta VARCHAR2(16),
+  tipo_tarjeta VARCHAR2(20)
+);
+
+-- Nuevos inserts para la tabla `articulos`
+INSERT INTO articulos (id_articulo, nombre, precio, stock) VALUES
+(seq_articulos.NEXTVAL, 'Producto G', 10, 80);
+INSERT INTO articulos (id_articulo, nombre, precio, stock) VALUES
+(seq_articulos.NEXTVAL, 'Producto H', 9, 55);
+INSERT INTO articulos (id_articulo, nombre, precio, stock) VALUES
+(seq_articulos.NEXTVAL, 'Producto I', 14, 70);
+
+-- Nuevos inserts para la tabla `dir_envio`
+INSERT INTO dir_envio (id_direccion, nombre) VALUES
+(seq_dir_envio.NEXTVAL, 'Calle B, Ciudad C');
+INSERT INTO dir_envio (id_direccion, nombre) VALUES
+(seq_dir_envio.NEXTVAL, 'Avenida Q, Ciudad R');
+INSERT INTO dir_envio (id_direccion, nombre) VALUES
+(seq_dir_envio.NEXTVAL, 'Calle X, Ciudad Z');
+
+-- Nuevos inserts para la tabla `particulares`
+INSERT INTO particulares (id_particular, nombre, dni, telefono, direccion) VALUES
+(seq_particulares.NEXTVAL, 'Laura Fernández', '789123456', '678678678', 'Avenida Terciaria 789');
+INSERT INTO particulares (id_particular, nombre, dni, telefono, direccion) VALUES
+(seq_particulares.NEXTVAL, 'David López', '555555555', '123456789', 'Plaza Mayor 654');
+INSERT INTO particulares (id_particular, nombre, dni, telefono, direccion) VALUES
+(seq_particulares.NEXTVAL, 'Ana Pérez', '987654321', '555123456', 'Calle Nueva 123');
+INSERT INTO particulares (id_particular, nombre, dni, telefono, direccion) VALUES
+(seq_particulares.NEXTVAL, 'Carlos Rodríguez', '123789456', '987987987', 'Avenida Principal 987');
+
+-- Nuevos inserts para la tabla `tickets`
+INSERT INTO tickets (id_ticket, fecha, titular, num_tarjeta, tipo_tarjeta) VALUES
+(seq_tickets.NEXTVAL, TO_DATE('2023-11-05', 'YYYY-MM-DD'), 'Ana García', '4444333322221111', 'Visa');
+INSERT INTO tickets (id_ticket, fecha, titular, num_tarjeta, tipo_tarjeta) VALUES
+(seq_tickets.NEXTVAL, TO_DATE('2023-11-06', 'YYYY-MM-DD'), 'Javier Martínez', '1111222233334444', 'MasterCard');
+INSERT INTO tickets (id_ticket, fecha, titular, num_tarjeta, tipo_tarjeta) VALUES
+(seq_tickets.NEXTVAL, TO_DATE('2023-11-07', 'YYYY-MM-DD'), 'Sara Pérez', '8888999977775555', 'American Express');

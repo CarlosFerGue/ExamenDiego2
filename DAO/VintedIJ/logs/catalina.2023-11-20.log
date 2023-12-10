@@ -1,0 +1,478 @@
+20-Nov-2023 08:28:30.222 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.83
+20-Nov-2023 08:28:30.224 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 9 2023 20:57:42 UTC
+20-Nov-2023 08:28:30.224 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.83.0
+20-Nov-2023 08:28:30.225 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+20-Nov-2023 08:28:30.225 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+20-Nov-2023 08:28:30.225 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+20-Nov-2023 08:28:30.225 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot
+20-Nov-2023 08:28:30.225 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.7+7
+20-Nov-2023 08:28:30.225 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Eclipse Adoptium
+20-Nov-2023 08:28:30.225 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 08:28:30.225 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 08:28:30.231 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Nov-2023 08:28:30.231 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+20-Nov-2023 08:28:30.231 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+20-Nov-2023 08:28:30.231 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Nov-2023 08:28:30.232 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Nov-2023 08:28:30.232 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 08:28:30.232 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 08:28:30.232 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\temp
+20-Nov-2023 08:28:30.232 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\logging.properties
+20-Nov-2023 08:28:30.232 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2023 08:28:30.232 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=49449:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin
+20-Nov-2023 08:28:30.232 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dfile.encoding=UTF-8
+20-Nov-2023 08:28:30.238 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\S2-PC00\product\21c\dbhomeXE\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\apache-maven-3.9.2\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\S2-PC00\AppData\Local\Microsoft\WindowsApps;C:\Users\S2-PC00\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\S2-PC00\.dotnet\tools;C:\Users\S2-PC00\AppData\Roaming\npm;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;;C:\Users\S2-PC00\AppData\Local\GitHubDesktop\bin;.]
+20-Nov-2023 08:28:30.403 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+20-Nov-2023 08:28:30.421 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [364] milliseconds
+20-Nov-2023 08:28:30.468 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Nov-2023 08:28:30.468 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+20-Nov-2023 08:28:30.477 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml]
+20-Nov-2023 08:28:31.084 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 08:28:31.139 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml] has finished in [661] ms
+20-Nov-2023 08:28:31.141 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 08:28:31.177 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [755] milliseconds
+20-Nov-2023 08:29:28.069 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 08:29:28.075 INFORMACIÓN [Thread-1] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+20-Nov-2023 08:29:28.078 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+20-Nov-2023 08:29:28.079 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+20-Nov-2023 08:29:28.082 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 08:29:28.084 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 08:29:31.611 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.83
+20-Nov-2023 08:29:31.613 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 9 2023 20:57:42 UTC
+20-Nov-2023 08:29:31.613 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.83.0
+20-Nov-2023 08:29:31.613 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+20-Nov-2023 08:29:31.614 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+20-Nov-2023 08:29:31.614 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+20-Nov-2023 08:29:31.614 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot
+20-Nov-2023 08:29:31.614 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.7+7
+20-Nov-2023 08:29:31.614 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Eclipse Adoptium
+20-Nov-2023 08:29:31.614 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 08:29:31.614 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 08:29:31.620 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Nov-2023 08:29:31.621 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+20-Nov-2023 08:29:31.621 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+20-Nov-2023 08:29:31.621 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Nov-2023 08:29:31.621 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Nov-2023 08:29:31.621 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 08:29:31.621 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 08:29:31.621 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\temp
+20-Nov-2023 08:29:31.622 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\logging.properties
+20-Nov-2023 08:29:31.622 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2023 08:29:31.622 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=49464:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin
+20-Nov-2023 08:29:31.622 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dfile.encoding=UTF-8
+20-Nov-2023 08:29:31.628 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\S2-PC00\product\21c\dbhomeXE\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\apache-maven-3.9.2\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\S2-PC00\AppData\Local\Microsoft\WindowsApps;C:\Users\S2-PC00\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\S2-PC00\.dotnet\tools;C:\Users\S2-PC00\AppData\Roaming\npm;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;;C:\Users\S2-PC00\AppData\Local\GitHubDesktop\bin;.]
+20-Nov-2023 08:29:31.808 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+20-Nov-2023 08:29:31.827 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [349] milliseconds
+20-Nov-2023 08:29:31.881 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Nov-2023 08:29:31.881 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+20-Nov-2023 08:29:31.889 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml]
+20-Nov-2023 08:29:32.447 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 08:29:32.503 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml] has finished in [611] ms
+20-Nov-2023 08:29:32.505 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 08:29:32.541 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [713] milliseconds
+20-Nov-2023 09:22:30.610 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:22:30.616 INFORMACIÓN [Thread-1] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+20-Nov-2023 09:22:30.620 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+20-Nov-2023 09:22:30.621 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+20-Nov-2023 09:22:30.625 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:22:30.627 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:31:27.186 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.83
+20-Nov-2023 09:31:27.188 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 9 2023 20:57:42 UTC
+20-Nov-2023 09:31:27.188 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.83.0
+20-Nov-2023 09:31:27.188 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+20-Nov-2023 09:31:27.189 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+20-Nov-2023 09:31:27.189 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+20-Nov-2023 09:31:27.189 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot
+20-Nov-2023 09:31:27.189 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.7+7
+20-Nov-2023 09:31:27.189 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Eclipse Adoptium
+20-Nov-2023 09:31:27.189 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 09:31:27.189 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 09:31:27.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Nov-2023 09:31:27.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+20-Nov-2023 09:31:27.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+20-Nov-2023 09:31:27.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Nov-2023 09:31:27.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Nov-2023 09:31:27.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 09:31:27.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 09:31:27.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\temp
+20-Nov-2023 09:31:27.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\logging.properties
+20-Nov-2023 09:31:27.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2023 09:31:27.195 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=58009:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin
+20-Nov-2023 09:31:27.196 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dfile.encoding=UTF-8
+20-Nov-2023 09:31:27.202 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\S2-PC00\product\21c\dbhomeXE\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\apache-maven-3.9.2\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\S2-PC00\AppData\Local\Microsoft\WindowsApps;C:\Users\S2-PC00\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\S2-PC00\.dotnet\tools;C:\Users\S2-PC00\AppData\Roaming\npm;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;;C:\Users\S2-PC00\AppData\Local\GitHubDesktop\bin;.]
+20-Nov-2023 09:31:27.367 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+20-Nov-2023 09:31:27.380 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [327] milliseconds
+20-Nov-2023 09:31:27.423 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Nov-2023 09:31:27.423 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+20-Nov-2023 09:31:27.431 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml]
+20-Nov-2023 09:31:27.970 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 09:31:28.032 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml] has finished in [600] ms
+20-Nov-2023 09:31:28.034 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:31:28.070 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [690] milliseconds
+20-Nov-2023 09:31:28.898 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:31:28.905 INFORMACIÓN [Thread-1] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+20-Nov-2023 09:31:28.910 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:31:28.912 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:32:42.869 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.83
+20-Nov-2023 09:32:42.871 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 9 2023 20:57:42 UTC
+20-Nov-2023 09:32:42.872 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.83.0
+20-Nov-2023 09:32:42.872 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+20-Nov-2023 09:32:42.872 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+20-Nov-2023 09:32:42.872 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+20-Nov-2023 09:32:42.872 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot
+20-Nov-2023 09:32:42.872 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.7+7
+20-Nov-2023 09:32:42.872 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Eclipse Adoptium
+20-Nov-2023 09:32:42.872 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 09:32:42.873 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 09:32:42.880 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Nov-2023 09:32:42.880 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+20-Nov-2023 09:32:42.880 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+20-Nov-2023 09:32:42.880 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Nov-2023 09:32:42.881 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Nov-2023 09:32:42.881 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 09:32:42.881 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 09:32:42.881 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\temp
+20-Nov-2023 09:32:42.881 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\logging.properties
+20-Nov-2023 09:32:42.881 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2023 09:32:42.881 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=58073:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin
+20-Nov-2023 09:32:42.881 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dfile.encoding=UTF-8
+20-Nov-2023 09:32:42.889 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\S2-PC00\product\21c\dbhomeXE\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\apache-maven-3.9.2\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\S2-PC00\AppData\Local\Microsoft\WindowsApps;C:\Users\S2-PC00\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\S2-PC00\.dotnet\tools;C:\Users\S2-PC00\AppData\Roaming\npm;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;;C:\Users\S2-PC00\AppData\Local\GitHubDesktop\bin;.]
+20-Nov-2023 09:32:43.071 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+20-Nov-2023 09:32:43.088 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [356] milliseconds
+20-Nov-2023 09:32:43.125 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Nov-2023 09:32:43.126 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+20-Nov-2023 09:32:43.133 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml]
+20-Nov-2023 09:32:43.708 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 09:32:43.768 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml] has finished in [635] ms
+20-Nov-2023 09:32:43.770 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:32:43.806 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [717] milliseconds
+20-Nov-2023 09:36:31.744 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:36:31.751 INFORMACIÓN [Thread-1] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+20-Nov-2023 09:36:31.754 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+20-Nov-2023 09:36:31.755 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+20-Nov-2023 09:36:31.758 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:36:31.760 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:36:35.284 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.83
+20-Nov-2023 09:36:35.287 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 9 2023 20:57:42 UTC
+20-Nov-2023 09:36:35.287 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.83.0
+20-Nov-2023 09:36:35.287 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+20-Nov-2023 09:36:35.287 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+20-Nov-2023 09:36:35.287 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+20-Nov-2023 09:36:35.287 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot
+20-Nov-2023 09:36:35.288 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.7+7
+20-Nov-2023 09:36:35.288 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Eclipse Adoptium
+20-Nov-2023 09:36:35.288 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 09:36:35.288 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 09:36:35.296 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Nov-2023 09:36:35.296 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+20-Nov-2023 09:36:35.296 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+20-Nov-2023 09:36:35.296 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Nov-2023 09:36:35.296 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Nov-2023 09:36:35.296 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 09:36:35.296 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 09:36:35.296 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\temp
+20-Nov-2023 09:36:35.297 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\logging.properties
+20-Nov-2023 09:36:35.297 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2023 09:36:35.297 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=58270:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin
+20-Nov-2023 09:36:35.297 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dfile.encoding=UTF-8
+20-Nov-2023 09:36:35.304 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\S2-PC00\product\21c\dbhomeXE\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\apache-maven-3.9.2\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\S2-PC00\AppData\Local\Microsoft\WindowsApps;C:\Users\S2-PC00\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\S2-PC00\.dotnet\tools;C:\Users\S2-PC00\AppData\Roaming\npm;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;;C:\Users\S2-PC00\AppData\Local\GitHubDesktop\bin;.]
+20-Nov-2023 09:36:35.496 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+20-Nov-2023 09:36:35.515 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [363] milliseconds
+20-Nov-2023 09:36:35.563 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Nov-2023 09:36:35.563 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+20-Nov-2023 09:36:35.574 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml]
+20-Nov-2023 09:36:36.137 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 09:36:36.198 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml] has finished in [624] ms
+20-Nov-2023 09:36:36.201 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:36:36.239 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [723] milliseconds
+20-Nov-2023 09:38:44.890 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:38:44.897 INFORMACIÓN [Thread-1] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+20-Nov-2023 09:38:44.903 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:38:44.906 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:38:47.621 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.83
+20-Nov-2023 09:38:47.625 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 9 2023 20:57:42 UTC
+20-Nov-2023 09:38:47.625 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.83.0
+20-Nov-2023 09:38:47.625 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+20-Nov-2023 09:38:47.625 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+20-Nov-2023 09:38:47.625 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+20-Nov-2023 09:38:47.625 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot
+20-Nov-2023 09:38:47.625 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.7+7
+20-Nov-2023 09:38:47.626 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Eclipse Adoptium
+20-Nov-2023 09:38:47.626 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 09:38:47.626 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 09:38:47.635 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Nov-2023 09:38:47.635 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+20-Nov-2023 09:38:47.635 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+20-Nov-2023 09:38:47.635 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Nov-2023 09:38:47.635 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Nov-2023 09:38:47.635 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 09:38:47.635 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 09:38:47.635 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\temp
+20-Nov-2023 09:38:47.635 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\logging.properties
+20-Nov-2023 09:38:47.636 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2023 09:38:47.636 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=58379:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin
+20-Nov-2023 09:38:47.636 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dfile.encoding=UTF-8
+20-Nov-2023 09:38:47.646 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\S2-PC00\product\21c\dbhomeXE\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\apache-maven-3.9.2\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\S2-PC00\AppData\Local\Microsoft\WindowsApps;C:\Users\S2-PC00\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\S2-PC00\.dotnet\tools;C:\Users\S2-PC00\AppData\Roaming\npm;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;;C:\Users\S2-PC00\AppData\Local\GitHubDesktop\bin;.]
+20-Nov-2023 09:38:47.818 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+20-Nov-2023 09:38:47.832 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [351] milliseconds
+20-Nov-2023 09:38:47.870 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Nov-2023 09:38:47.870 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+20-Nov-2023 09:38:47.877 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml]
+20-Nov-2023 09:38:48.426 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 09:38:48.483 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml] has finished in [605] ms
+20-Nov-2023 09:38:48.485 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:38:48.525 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [693] milliseconds
+20-Nov-2023 09:45:13.528 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:45:13.535 INFORMACIÓN [Thread-1] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+20-Nov-2023 09:45:13.540 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+20-Nov-2023 09:45:13.540 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+20-Nov-2023 09:45:13.544 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:45:13.546 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:45:49.712 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.83
+20-Nov-2023 09:45:49.714 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 9 2023 20:57:42 UTC
+20-Nov-2023 09:45:49.714 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.83.0
+20-Nov-2023 09:45:49.714 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+20-Nov-2023 09:45:49.714 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+20-Nov-2023 09:45:49.715 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+20-Nov-2023 09:45:49.715 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot
+20-Nov-2023 09:45:49.715 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.7+7
+20-Nov-2023 09:45:49.715 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Eclipse Adoptium
+20-Nov-2023 09:45:49.715 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 09:45:49.715 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 09:45:49.722 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Nov-2023 09:45:49.722 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+20-Nov-2023 09:45:49.723 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+20-Nov-2023 09:45:49.723 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Nov-2023 09:45:49.723 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Nov-2023 09:45:49.723 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 09:45:49.723 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 09:45:49.723 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\temp
+20-Nov-2023 09:45:49.723 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\logging.properties
+20-Nov-2023 09:45:49.723 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2023 09:45:49.723 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=58805:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin
+20-Nov-2023 09:45:49.723 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dfile.encoding=UTF-8
+20-Nov-2023 09:45:49.730 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\S2-PC00\product\21c\dbhomeXE\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\apache-maven-3.9.2\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\S2-PC00\AppData\Local\Microsoft\WindowsApps;C:\Users\S2-PC00\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\S2-PC00\.dotnet\tools;C:\Users\S2-PC00\AppData\Roaming\npm;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;;C:\Users\S2-PC00\AppData\Local\GitHubDesktop\bin;.]
+20-Nov-2023 09:45:49.896 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+20-Nov-2023 09:45:49.910 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [332] milliseconds
+20-Nov-2023 09:45:49.944 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Nov-2023 09:45:49.944 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+20-Nov-2023 09:45:49.950 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml]
+20-Nov-2023 09:45:50.498 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 09:45:50.566 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml] has finished in [615] ms
+20-Nov-2023 09:45:50.568 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:45:50.607 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [697] milliseconds
+20-Nov-2023 09:56:23.894 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:56:23.900 INFORMACIÓN [Thread-1] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+20-Nov-2023 09:56:23.903 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+20-Nov-2023 09:56:23.904 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+20-Nov-2023 09:56:23.908 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:56:23.910 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:56:27.010 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.83
+20-Nov-2023 09:56:27.012 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 9 2023 20:57:42 UTC
+20-Nov-2023 09:56:27.012 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.83.0
+20-Nov-2023 09:56:27.013 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+20-Nov-2023 09:56:27.013 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+20-Nov-2023 09:56:27.013 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+20-Nov-2023 09:56:27.013 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot
+20-Nov-2023 09:56:27.013 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.7+7
+20-Nov-2023 09:56:27.013 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Eclipse Adoptium
+20-Nov-2023 09:56:27.013 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 09:56:27.013 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 09:56:27.020 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Nov-2023 09:56:27.020 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+20-Nov-2023 09:56:27.020 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+20-Nov-2023 09:56:27.020 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Nov-2023 09:56:27.020 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Nov-2023 09:56:27.020 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 09:56:27.020 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 09:56:27.020 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\temp
+20-Nov-2023 09:56:27.020 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\logging.properties
+20-Nov-2023 09:56:27.020 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2023 09:56:27.020 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=59373:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin
+20-Nov-2023 09:56:27.020 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dfile.encoding=UTF-8
+20-Nov-2023 09:56:27.026 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\S2-PC00\product\21c\dbhomeXE\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\apache-maven-3.9.2\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\S2-PC00\AppData\Local\Microsoft\WindowsApps;C:\Users\S2-PC00\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\S2-PC00\.dotnet\tools;C:\Users\S2-PC00\AppData\Roaming\npm;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;;C:\Users\S2-PC00\AppData\Local\GitHubDesktop\bin;.]
+20-Nov-2023 09:56:27.192 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+20-Nov-2023 09:56:27.208 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [336] milliseconds
+20-Nov-2023 09:56:27.250 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Nov-2023 09:56:27.250 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+20-Nov-2023 09:56:27.261 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml]
+20-Nov-2023 09:56:27.821 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 09:56:27.881 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml] has finished in [618] ms
+20-Nov-2023 09:56:27.883 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 09:56:27.920 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [710] milliseconds
+20-Nov-2023 10:00:36.069 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 10:00:36.076 INFORMACIÓN [Thread-1] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+20-Nov-2023 10:00:36.079 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+20-Nov-2023 10:00:36.080 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+20-Nov-2023 10:00:36.082 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 10:00:36.086 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 10:00:38.855 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.83
+20-Nov-2023 10:00:38.857 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 9 2023 20:57:42 UTC
+20-Nov-2023 10:00:38.857 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.83.0
+20-Nov-2023 10:00:38.857 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+20-Nov-2023 10:00:38.858 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+20-Nov-2023 10:00:38.858 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+20-Nov-2023 10:00:38.858 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot
+20-Nov-2023 10:00:38.858 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.7+7
+20-Nov-2023 10:00:38.858 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Eclipse Adoptium
+20-Nov-2023 10:00:38.858 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 10:00:38.858 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 10:00:38.865 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Nov-2023 10:00:38.865 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+20-Nov-2023 10:00:38.865 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+20-Nov-2023 10:00:38.865 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Nov-2023 10:00:38.865 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Nov-2023 10:00:38.865 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 10:00:38.865 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 10:00:38.865 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\temp
+20-Nov-2023 10:00:38.865 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\logging.properties
+20-Nov-2023 10:00:38.865 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2023 10:00:38.866 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=59607:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin
+20-Nov-2023 10:00:38.866 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dfile.encoding=UTF-8
+20-Nov-2023 10:00:38.871 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\S2-PC00\product\21c\dbhomeXE\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\apache-maven-3.9.2\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\S2-PC00\AppData\Local\Microsoft\WindowsApps;C:\Users\S2-PC00\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\S2-PC00\.dotnet\tools;C:\Users\S2-PC00\AppData\Roaming\npm;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;;C:\Users\S2-PC00\AppData\Local\GitHubDesktop\bin;.]
+20-Nov-2023 10:00:39.050 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+20-Nov-2023 10:00:39.071 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [351] milliseconds
+20-Nov-2023 10:00:39.123 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Nov-2023 10:00:39.124 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+20-Nov-2023 10:00:39.134 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml]
+20-Nov-2023 10:00:39.704 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 10:00:39.760 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml] has finished in [624] ms
+20-Nov-2023 10:00:39.762 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 10:00:39.801 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [728] milliseconds
+20-Nov-2023 10:20:41.770 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 10:20:41.777 INFORMACIÓN [Thread-1] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+20-Nov-2023 10:20:41.780 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+20-Nov-2023 10:20:41.781 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+20-Nov-2023 10:20:41.784 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 10:20:41.789 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 10:20:44.973 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.83
+20-Nov-2023 10:20:44.975 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 9 2023 20:57:42 UTC
+20-Nov-2023 10:20:44.975 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.83.0
+20-Nov-2023 10:20:44.975 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+20-Nov-2023 10:20:44.975 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+20-Nov-2023 10:20:44.976 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+20-Nov-2023 10:20:44.976 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot
+20-Nov-2023 10:20:44.976 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.7+7
+20-Nov-2023 10:20:44.976 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Eclipse Adoptium
+20-Nov-2023 10:20:44.976 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 10:20:44.976 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 10:20:44.983 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Nov-2023 10:20:44.983 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+20-Nov-2023 10:20:44.984 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+20-Nov-2023 10:20:44.984 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Nov-2023 10:20:44.984 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Nov-2023 10:20:44.984 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 10:20:44.984 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 10:20:44.984 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\temp
+20-Nov-2023 10:20:44.985 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\logging.properties
+20-Nov-2023 10:20:44.985 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2023 10:20:44.985 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=60766:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin
+20-Nov-2023 10:20:44.985 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dfile.encoding=UTF-8
+20-Nov-2023 10:20:44.991 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\S2-PC00\product\21c\dbhomeXE\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\apache-maven-3.9.2\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\S2-PC00\AppData\Local\Microsoft\WindowsApps;C:\Users\S2-PC00\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\S2-PC00\.dotnet\tools;C:\Users\S2-PC00\AppData\Roaming\npm;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;;C:\Users\S2-PC00\AppData\Local\GitHubDesktop\bin;.]
+20-Nov-2023 10:20:45.200 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+20-Nov-2023 10:20:45.219 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [388] milliseconds
+20-Nov-2023 10:20:45.256 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Nov-2023 10:20:45.256 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+20-Nov-2023 10:20:45.264 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml]
+20-Nov-2023 10:20:45.810 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 10:20:45.868 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml] has finished in [602] ms
+20-Nov-2023 10:20:45.870 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 10:20:45.906 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [687] milliseconds
+20-Nov-2023 11:19:52.037 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 11:19:52.044 INFORMACIÓN [Thread-1] org.apache.catalina.core.StandardService.stopInternal Parando servicio [Catalina]
+20-Nov-2023 11:19:52.048 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [com.mysql.cj.jdbc.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+20-Nov-2023 11:19:52.048 ADVERTENCIA [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ java.base@17.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+20-Nov-2023 11:19:52.051 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 11:19:52.056 INFORMACIÓN [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 12:13:18.000 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.83
+20-Nov-2023 12:13:18.002 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Nov 9 2023 20:57:42 UTC
+20-Nov-2023 12:13:18.003 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.83.0
+20-Nov-2023 12:13:18.003 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+20-Nov-2023 12:13:18.003 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+20-Nov-2023 12:13:18.003 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+20-Nov-2023 12:13:18.003 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot
+20-Nov-2023 12:13:18.003 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       17.0.7+7
+20-Nov-2023 12:13:18.003 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Eclipse Adoptium
+20-Nov-2023 12:13:18.003 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 12:13:18.003 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 12:13:18.011 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Nov-2023 12:13:18.011 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+20-Nov-2023 12:13:18.011 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+20-Nov-2023 12:13:18.011 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Nov-2023 12:13:18.011 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Nov-2023 12:13:18.011 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\Software\apache-tomcat-9.0.83
+20-Nov-2023 12:13:18.011 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ
+20-Nov-2023 12:13:18.011 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\temp
+20-Nov-2023 12:13:18.011 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\logging.properties
+20-Nov-2023 12:13:18.012 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2023 12:13:18.012 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=50554:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin
+20-Nov-2023 12:13:18.012 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dfile.encoding=UTF-8
+20-Nov-2023 12:13:18.018 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\S2-PC00\product\21c\dbhomeXE\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\apache-maven-3.9.2\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\S2-PC00\AppData\Local\Microsoft\WindowsApps;C:\Users\S2-PC00\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\S2-PC00\.dotnet\tools;C:\Users\S2-PC00\AppData\Roaming\npm;C:\Users\S2-PC00\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin;;C:\Users\S2-PC00\AppData\Local\GitHubDesktop\bin;.]
+20-Nov-2023 12:13:18.186 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+20-Nov-2023 12:13:18.199 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Server initialization in [335] milliseconds
+20-Nov-2023 12:13:18.234 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+20-Nov-2023 12:13:18.235 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.83]
+20-Nov-2023 12:13:18.242 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml]
+20-Nov-2023 12:13:18.776 INFORMACIÓN [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+20-Nov-2023 12:13:18.853 INFORMACIÓN [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\S2-PC00\Desktop\VINTED\Vinted-Grado-DAM\VintedIJ\conf\Catalina\localhost\ROOT.xml] has finished in [609] ms
+20-Nov-2023 12:13:18.855 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2023 12:13:18.901 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in [702] milliseconds

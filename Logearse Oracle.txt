@@ -1,0 +1,14 @@
+conn sys as sysdba
+
+create user z identified by z;
+
+grant connect to z;
+grant resource to z;
+
+connect
+z
+z
+
+SET SERVEROUTPUT ON;
+
+CREATE TABLE...
