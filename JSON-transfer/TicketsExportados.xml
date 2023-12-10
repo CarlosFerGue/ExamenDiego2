@@ -1,0 +1,23 @@
+<lista_tickets>
+	<ticket>
+		<id_ticket>13</id_ticket>
+		<fecha>2023-11-05</fecha>
+		<titular>Ana García</titular>
+		<num_tarjeta>4444333322221111</num_tarjeta>
+		<tipo_tarjeta>Visa</tipo_tarjeta>
+	</ticket>
+	<ticket>
+		<id_ticket>14</id_ticket>
+		<fecha>2023-11-06</fecha>
+		<titular>Javier Martínez</titular>
+		<num_tarjeta>1111222233334444</num_tarjeta>
+		<tipo_tarjeta>MasterCard</tipo_tarjeta>
+	</ticket>
+	<ticket>
+		<id_ticket>15</id_ticket>
+		<fecha>2023-11-07</fecha>
+		<titular>Sara Pérez</titular>
+		<num_tarjeta>8888999977775555</num_tarjeta>
+		<tipo_tarjeta>American Express</tipo_tarjeta>
+	</ticket>
+</lista_tickets>

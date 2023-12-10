@@ -53,7 +53,9 @@ public interface ITablas {
 
         //Indicamos que archivo vamos a procesar
         System.out.println("Leyendo el archivo 'Archivos/" + tabla + "Importar.xml'");
-        Document documento = dbBuilder.parse("Archivos/" + tabla + "Importar.xml");
+
+        //Aqui le cambias la ruta de donde importas
+        Document documento = dbBuilder.parse("C://Users//charl//OneDrive//Escritorio/" + tabla + "Importar.xml");
         documento.getDocumentElement().normalize();
 
         //Obtenemos la lista de nodos "dato"
