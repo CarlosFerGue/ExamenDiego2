@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="./IMG/logos/white_logos/logo_transparent.png">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FAM'S Coffee Shop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/shopcart.css'>
+    <!--IMPORTAMOS LA FUENTE DE TEXTO HEEBO(TEXTO)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400&display=swap" rel="stylesheet">
+    <!--IMPORTAMOS LA FUENTE DE TEXTO VOLLKORN(TEXTO FOOTER)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!----------------------------------------------HEADER---------------------------------------------->
+    <div id="header">
+        <img src="IMG/logos/logo_wide_colour_transparent.png" id="logo_header">
+        <a href="index.html">
+            <div class="buttons_header">HOME</div>
+        </a>
+        <a href="products.html">
+            <div class="buttons_header">PRODUCTS</div>
+        </a>
+        <a href="login.html">
+            <div class="buttons_header">STAFF</div>
+        </a>
+        <a href="loginUser.html" class="icono-user">
+            <div class="buttons_header">
+              <p id="nick"></p>
+              <span>
+                <!-- Esta es la linea de comando que implementa el icono de usuario -->
+                <ion-icon name="person-circle-outline"></ion-icon>
+              </span>
+            </div>
+          </a>
+    </div>
+
+
+    <!----------------------------------------------CONTENT--------------------------------------------->
+    <div class="bg"></div>
+    <div class="container">
+        <!-- CONTENEDOR EN EL QUE SE ENCONTRARÁ LA LISTA DE ITEMS EN EL CARRITO -->
+        <div class="list">
+            <div class="tags">
+                <div class="tag">PRODUCT</div>
+                <div class="tag">PRICE</div>
+                <div class="tag">QUANTITY</div>
+                <div class="tag">TOTAL</div>
+            </div>
+            <div class="hr_tags"></div>
+            <!-- SECCIÓN DONDE LISTAMOS LOS PRODUCTOS DEL CARRITO DE LA COMPRA -->
+            <div class="items">
+                <!-- CADA PRODUCTO DE LA LISTA -->
+                <!-- <div class="item">
+                    <div class="item_desc"><img src="./IMG/PRODUCTS/cm4.png" class="item_pic">Inissia Red</div>
+                    <div class="item_price">65.89</div>
+                    <div class="item_quantity">
+                        <input type="text" value="1" class="quantity">
+                    </div>
+                    <div class="item_total"></div>
+                    <img src="./IMG/logos/delete_button.png" class="delete_button" onclick="delete_item();">
+                </div>
+                <div class="hr_items"></div> -->
+            </div>
+        </div>
+        <!-- CONTENEDOR EN EL QUE SE ENCONTRARÁ EL RESUMEN DE LA COMPRA -->
+        <div class="summary">
+            <div class="summary_title">ORDER SUMMARY</div>
+            <div class="hr_summary"></div>
+            <div class="summary_values">
+                <div class="summary_values_text">Subtotal:</div>
+                <div class="summary_values_value" id="subtotal_value">0</div>
+            </div>
+            <div class="summary_values">
+                <div class="summary_values_text">Shipping (6%):</div>
+                <div class="summary_values_value" id="shipping_div">0</div>
+            </div>
+            <div class="hr_summary_total"></div>
+            <div class="summary_total">
+                <div class="summary_total_text">TOTAL:</div>
+                <div class="summary_total_value" id="total_div">0</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!----------------------------------------------FOOTER---------------------------------------------->
+    <div id="footer">
+        <img src="IMG/logos/logo_wide_colour_transparent.png" id="logo_footer">
+        <div id="footer_text1">Contact our support:</div>
+        <div id="footer_text2">948 82 67 42</div>
+        <div id="follow">Follow us:</div>
+        <div id="social">
+            <a href="https://facebook.com"><img src="IMG/logos/facebook_color.png" class="logo_social"></a>
+            <a href="https://twitter.com"><img src="IMG/logos/twitter_color.png" class="logo_social"></a>
+            <a href="https://instagram.com"><img src="IMG/logos/instagram_color.png" class="logo_social"></a>
+        </div>
+    </div>
+    <script defer src='js/shopcart.js'></script>
+    <!-- Estos links son para los iconos del carrito y el usuario de arriba a la derecha -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

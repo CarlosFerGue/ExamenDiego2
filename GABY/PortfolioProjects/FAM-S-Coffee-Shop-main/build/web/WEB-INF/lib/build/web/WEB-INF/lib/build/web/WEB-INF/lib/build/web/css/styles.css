@@ -1,0 +1,43 @@
+#movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.movie h3 {
+  margin-top: 0;
+}
+
+.movie p {
+  margin-bottom: 10px;
+}
+
+#filters {
+  margin-top: 20px;
+}
+
+#filters h2 {
+  margin-bottom: 10px;
+}
+
+#filters label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#filters select {
+  margin-bottom: 10px;
+}
+
+#filters button {
+  display: block;
+  margin: 10px auto 0;
+}

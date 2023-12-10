@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Products</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/products.css'>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--IMPORTAMOS LA FUENTE DE TEXTO HEEBO(TEXTO)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400&display=swap" rel="stylesheet">
+    <!--IMPORTAMOS LA FUENTE DE TEXTO VOLLKORN(TEXTO FOOTER)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body onload="mostrarResultados('Controller?ACTION=PRODUCTOS.FIND_ALL')">
+
+    <!----------------------------------------------HEADER---------------------------------------------->
+    <div id="header">
+        <img src="/web/IMG/logos/logo_wide_colour_transparent.png" id="logo_header">
+        <a href="index.html"><div class="buttons_header">HOME</div></a>
+        <a href="products.html"><div class="buttons_header">PRODUCTS</div></a>
+        <a href="login.html"><div class="buttons_header">STAFF</div></a>
+    </div>
+    <!----------------------------------------------CONTENT--------------------------------------------->
+    
+
+    <!-- Aquí comienza la sección de filtro -->
+    <div class="filtro">
+        <div id="capsulas">
+            <img src="IMG/logos/capsules.png" alt="capsules">
+            <h4>COFFEE CAPSULES</h4>
+        </div>
+        <div id="cafeteras">
+            <img src="IMG/logos/coffemaker.png" alt="coffemaker">
+            <h4>COFFEE MAKERS</h4>
+        </div>
+        <div id="precio">
+            <div class="wrapper">
+                <header>
+                    <span>Min</span>
+                    <h2>Price Range</h2>
+                    <span>Max</span>
+                </header>
+
+                <div class="price-input">
+                  <div class="field">
+                    <input type="number" class="input-min" value="120">
+                  </div>
+
+                  <div class="field">
+                    <input type="number" class="input-max" value="380">
+                  </div>
+                </div>
+
+                <div class="slider">
+                  <div class="progress"></div>
+                </div>
+                <div class="range-input">
+                  <input type="range" class="range-min" min="0" max="500" value="120" step="1">
+                  <input type="range" class="range-max" min="0" max="500" value="380" step="1">
+                </div>
+              </div>
+        </div>
+        <div id="close_filter">
+            <div id="close"></div>
+            <div id="filter_tag"></div>
+        </div>
+    </div>
+    <!-- Aquí finaliza la seccion de filtro -->
+
+
+
+    <!-- Aquí comienza la sección de productos -->
+    <div class="productos"></div>
+    <!-- Aquí finaliza la sección de productos -->
+
+
+    
+    <!----------------------------------------------FOOTER---------------------------------------------->
+    <div id="footer">
+        <img src="/web/IMG/logos/logo_wide_colour_transparent.png" id="logo_footer">
+        <div id="footer_text1">Contact our support:</div>
+        <div id="footer_text2">948 82 67 42</div>
+        <div id="follow">Follow us:</div>
+        <div id="social">
+            <a href="https://facebook.com"><img src="/web/IMG/logos/facebook_color.png" class="logo_social"></a>
+            <a href="https://twitter.com"><img src="/web/IMG/logos/twitter_color.png" class="logo_social"></a>
+            <a href="https://instagram.com"><img src="/web/IMG/logos/instagram_color.png" class="logo_social"></a>
+        </div>
+    </div>
+
+    <script defer src='js/products.js'></script>
+</body>
+</html>

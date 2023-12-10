@@ -1,0 +1,13 @@
+<lista_articulos>
+	<articulo>
+		<id_articulo>5</id_articulo>
+		<nombre>Producto J</nombre>
+		<precio>16</precio>
+		<stock>50</stock>
+	</articulo>
+	<articulo>
+		<nombre>Producto F</nombre>
+		<precio>16</precio>
+		<stock>50</stock>
+	</articulo>
+</lista_articulos>

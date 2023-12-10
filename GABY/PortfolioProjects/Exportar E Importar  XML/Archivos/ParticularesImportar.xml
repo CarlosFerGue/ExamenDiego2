@@ -1,0 +1,15 @@
+<lista_particulares>
+	<particular>
+		<id_particular>4</id_particular>
+		<nombre>Gabriel Milagro</nombre>
+		<telefono>555555555</telefono>
+		<dni>79356299F</dni>
+		<direccion>Calle Principal 123</direccion>
+	</particular>
+	<particular>
+		<nombre>Jorge Alquezar</nombre>
+		<telefono>649856248</telefono>
+		<dni>79845481F</dni>
+		<direccion>Calle Arkadia</direccion>
+	</particular>
+</lista_particulares>

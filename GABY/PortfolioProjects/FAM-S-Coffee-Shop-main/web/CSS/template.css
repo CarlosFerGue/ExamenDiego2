@@ -1,0 +1,149 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);/*IMPORTAMOS LA FUENTE JEJU GOTHIC*/
+:root{
+    /*Set de colores y fuentes almacenados en variables*/
+    --white: #FFFFFF;
+    --gold: #EFBB02;
+    --heebo: 'Heebo', sans-serif;
+    --black_header: #191919;
+    --black_footer: #0D0D0D;
+    --transparent: rgba(255, 255, 255, 0);
+    --titles: 'Jeju Gothic', sans-serif;
+}
+/*Ponemos fondo al cuerpo y aplicamos por defecto el color y la letra, también eliminamos la scroll bar*/
+body{
+    background-color: #000000;
+    color: var(--white);
+    font-family: var(--heebo);
+    font-style: normal;
+    
+}
+body::-webkit-scrollbar {display: none;}
+img{-webkit-user-drag: none;}
+
+/*-------------------------------------------------------ANIMACIONES-------------------------------------------------------*/
+@keyframes slideRight { /*Usada en el #titulo1*/
+    0% {transform: translateX(-5%); opacity: 0;}
+    45% {transform: translateX(-5%);opacity: 0%; }
+    100% {transform: translateX(0);opacity: 1;}
+}
+@keyframes slideUp { /*Usada en el #texto1*/
+    0% {transform: translateY(7%);opacity: 0;}
+    60% {transform: translateY(7%);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes slideDown { /*Usada en el #texto1*/
+    0% {transform: translateY(-7%);opacity: 0;}
+    40% {transform: translateY(-7%);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes fadeIN { /*Usada en el #bg1*/
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*-------------------------------------------------------HEADER-------------------------------------------------------*/
+#header{
+    position: absolute;
+    width: 100%;
+    height: 8.6%;
+    left: 0px;
+    top: 0px;
+    z-index: 15;
+    background: var(--black_header);
+    border-bottom: solid var(--gold) 0.3vh;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-name: slideDown;
+    display: flex;
+    align-items: center;
+}
+#logo_header{
+    float:left;
+    height: 60%;
+    margin-left: 1.5vw;
+}
+.buttons_header{
+    float: left;
+    font-weight: 400;
+    font-size: 1vw;
+    text-align: center;
+    color: var(--white);
+    margin-left: 2.2vw;
+    border-top: 1px solid var(--transparent);
+    transition: color 0.3s, border 0.3s;
+    margin-top: 0.5vh;
+}
+.buttons_header:hover{
+    color: var(--gold);
+    border-top: 1px solid var(--gold);
+}
+/*-------------------------------------------------------CONTENT------------------------------------------------------*/
+
+
+
+
+
+
+/*-------------------------------------------------------FOOTER-------------------------------------------------------*/
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 23vh;
+    left: 0px;
+    margin-top: 3vw;
+    background-color: var(--black_footer);
+    border-top: solid var(--gold) 0.3vh;
+}
+#logo_footer{
+    position: absolute;
+    width: 12vw;
+    height: 3.5vw;
+    left: 20vw;
+    top: 8vh;
+}
+#footer_text1{
+    position: absolute;
+    left: 45.9vw;
+    top: 3.8vw;
+    font-weight: 400;
+    font-size: 0.85vw;
+    text-align: center;
+}
+#footer_text2{
+    position: absolute;
+    left: 44.5vw;
+    top: 5.1vw;
+    font-weight: 600;
+    font-size: 1.85vw;
+    text-align: center;
+    color: var(--gold);
+}
+#follow{
+    font-family: 'Vollkorn', serif;
+    position: absolute;
+    left: 63vw;
+    top: 5vw;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6vw;
+    text-align: center;
+}
+#social{
+    position: absolute;
+    left: 70.5vw;
+    top: 4.4vw;
+}
+.logo_social{
+    height: 2.3vw;
+    width: 2.3vw;
+    margin-right: 0.8vw;
+    float:left;
+    transition: filter 0.15s;
+}
+.logo_social:hover{
+    filter: brightness(2) saturate(0);
+    
+}

@@ -1,0 +1,35 @@
+///////////////////////////////////////////////////////MOSTRAR API///////////////////////////////////////////////////////
+function mostrarAPI(URL){
+  const container = document.getElementById('container');
+  fetch(URL)
+  .then(response => response.json())
+  .then(data => {
+    const movies = data.results;
+    container.innerHTML = '';
+    movies.forEach(peli => {
+        const item = document.createElement('div');
+        item.classList.add('item');
+    
+        const caratula = document.createElement('img');
+        caratula.src='https://image.tmdb.org/t/p/w500'+peli.poster_path;
+        caratula.onerror='img/noimg.png';
+        
+        const info = document.createElement('div');
+        info.classList.add('info');
+        
+        const titulo = document.createElement('div');
+        titulo.classList.add('titulo');
+        titulo.textContent = peli.original_title;
+    
+        const nota = document.createElement('div');
+        nota.classList.add('nota');
+        nota.textContent = peli.vote_average.toString().padStart(1,1);
+    
+        container.appendChild(item);
+        item.appendChild(caratula);
+        item.appendChild(info);
+        info.appendChild(titulo);
+        info.appendChild(nota);
+    });
+  })
+}

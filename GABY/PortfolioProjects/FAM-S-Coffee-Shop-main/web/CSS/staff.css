@@ -1,0 +1,297 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);/*IMPORTAMOS LA FUENTE JEJU GOTHIC*/
+:root{
+    /*Set de colores y fuentes almacenados en variables*/
+    --white: #FFFFFF;
+    --gold: #EFBB02;
+    --heebo: 'Heebo', sans-serif;
+    --black_header: #191919;
+    --black_footer: #0D0D0D;
+    --transparent: rgba(255, 255, 255, 0);
+    --titles: 'Jeju Gothic', sans-serif;
+}
+/*Ponemos fondo al cuerpo y aplicamos por defecto el color y la letra, también eliminamos la scroll bar*/
+body{
+    background-color: #000000;
+    color: var(--white);
+    font-family: var(--heebo);
+    font-style: normal;
+}
+body::-webkit-scrollbar {display: none;}
+img{-webkit-user-drag: none;}
+
+/*-------------------------------------------------------ANIMACIONES-------------------------------------------------------*/
+@keyframes slideRight { /*Usada en el #titulo1*/
+    0% {transform: translateX(-5%); opacity: 0;}
+    45% {transform: translateX(-5%);opacity: 0%; }
+    100% {transform: translateX(0);opacity: 1;}
+}
+@keyframes slideUp { /*Usada en el #texto1*/
+    0% {transform: translateY(7%);opacity: 0;}
+    60% {transform: translateY(7%);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes slideDown { /*Usada en el #texto1*/
+    0% {transform: translateY(-7%);opacity: 0;}
+    40% {transform: translateY(-7%);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes fadeIN { /*Usada en el #bg1*/
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*-------------------------------------------------------HEADER-------------------------------------------------------*/
+#header{
+    position: fixed;
+    width: 100%;
+    height: 4vw;
+    left: 0px;
+    top: 0px;
+    z-index: 15;
+    background: var(--black_header);
+    border-bottom: solid var(--gold) 0.3vh;
+    display: flex;
+    align-items: center;
+}
+#logo_header{
+    float:left;
+    height: 2.5vw;
+    margin-left: 1.5vw;
+}
+.buttons_header{
+    float: left;
+    font-weight: 400;
+    font-size: 1vw;
+    text-align: center;
+    color: var(--white);
+    margin-left: 2.2vw;
+    border-top: 1px solid var(--transparent);
+    transition: color 0.3s, border 0.3s;
+    margin-top: 0.5vh;
+}
+.buttons_header:hover{
+    color: var(--gold);
+    border-top: 1px solid var(--gold);
+}
+
+/*-------------------------------------------------------CONTENT------------------------------------------------------*/
+#spacer{
+    margin-bottom: 7%;
+}
+#bg{
+    position: fixed;
+    left: 0;
+    top: 8.9%;
+    width: 100%;
+    height: 91%;
+    background-image: url("../IMG/STAFF/bg_prl.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    filter: blur(20px) brightness(0.7);
+    z-index: -10;
+}
+/*----------------------------------------------------LATEST NEWS-----------------------------------------------------*/
+#content{
+    background: #141414c2;
+    width: 70vw;
+    margin: auto;
+    margin-top: 3%;
+    border-top: solid 0.2vw var(--gold);
+    padding-bottom: 3vw;
+    padding-bottom: 1.2vw;
+    display: block;
+    border-radius: 0  0 0.8vw 0.8vw;
+}
+.title{
+    font-family: var(--titles);
+    color: var(--gold);
+    font-weight: bolder;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+}
+.news{
+    background: rgba(0, 0, 0, 0.26);
+    width: 90%;
+    margin: auto;
+    border-bottom: solid 0.1vw #4B4B4B;
+    width: 90%;
+    margin: auto;
+    width: 90%;
+    margin: auto;
+    padding: 1.2vw;
+}
+.info{
+    width: 60%;
+    float: left;
+    padding: 0 2vw 0 0;
+}
+.news_title{
+    font-family: var(--titles);
+    color: var(--gold);
+    font-weight: bolder;
+    font-size: 1.3vw;
+    margin-bottom: 0.7vw;
+}
+.news_text{
+    text-align: justify;
+    font-size: 0.9vw;
+}
+.news_date{
+    margin-top: 0.7vw;
+    color: #979797;
+    font-weight: bolder;
+    font-size: 1.1vw;
+}
+hr{
+    background-color: #4B4B4B;
+    width: 92%;
+    height: 0.1vw;
+    margin: auto auto 0.5vw auto;
+    border: 0;
+}
+a{
+    color: var(--gold);
+    font-weight: bolder;
+}
+.news_video{
+    width: 23vw;
+    height: 13vw;
+}
+
+
+/*----------------------------------------------------WORK'S COUNCIL-----------------------------------------------------*/
+#employees{
+    width: 100%;
+    display: inline;
+}
+.staff{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.589);
+    width: 21vw;
+    height: 9.6vw;
+    border: solid 0.1vw var(--gold);
+    border-radius: 0.6vw;
+    margin-left: 1.5vw;
+}
+img{
+    display: block;
+    width: 9vw;
+    height: 9vw;
+    float: left;
+    margin-top: 0.3vw;
+    margin-left: 0.3vw;
+    margin-right: 0.5vw;
+    border-radius: 0.5vw;
+}
+.name{
+    padding: 1.1vw 0 0 0;
+    color: var(--gold);
+    font-weight: bolder;
+    font-size: 2.5vw;
+    font-family:var(--titles);
+}
+.lastname{
+    display: block;
+    padding: 0.3vw 0 0 1.5vw;
+    color: var(--gold);
+    line-height: 0.3vw;
+    font-weight: bolder;
+    font-size: 1vw;
+    font-family:var(--titles);
+}
+.job{
+    padding: 1vw 0 0 0;
+    font-family: var(--heebo);
+    font-weight: bolder;
+    font-size: 1.5vw;
+    line-height: 1.3vw;
+    color: #CFCFCF;
+}
+
+.paragraphs{
+    margin: auto;
+    width:85%;
+    text-align: justify;
+    margin-top: 3.5vw;
+    font-size: 0.9vw;
+}
+.paragraphs_title{
+    color: var(--gold);
+    font-weight: bolder;
+    font-size: 1.65vw;
+    font-family:var(--titles);
+}
+li{
+    list-style-type: none;
+    padding: 0 2vw 0 0 ;
+    text-indent: 3vw;
+}
+
+
+
+
+
+/*-------------------------------------------------------FOOTER-------------------------------------------------------*/
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 11vw;
+    left: 0px;
+    margin-top: 3vw;
+    background-color: var(--black_footer);
+    border-top: solid var(--gold) 0.3vh;
+}
+#logo_footer{
+    position: absolute;
+    width: 10.5vw;
+    height: 2.5vw;
+    left: 20vw;
+    top: 3.6vw;
+}
+#footer_text1{
+    position: absolute;
+    left: 45.9vw;
+    top: 3.8vw;
+    font-weight: 400;
+    font-size: 0.85vw;
+    text-align: center;
+}
+#footer_text2{
+    position: absolute;
+    left: 44.5vw;
+    top: 5.1vw;
+    font-weight: 600;
+    font-size: 1.85vw;
+    text-align: center;
+    color: var(--gold);
+}
+#follow{
+    font-family: 'Vollkorn', serif;
+    position: absolute;
+    left: 63vw;
+    top: 5vw;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6vw;
+    text-align: center;
+}
+#social{
+    position: absolute;
+    left: 70.5vw;
+    top: 4.4vw;
+}
+.logo_social{
+    height: 2.3vw;
+    width: 2.3vw;
+    margin-right: 0.8vw;
+    float:left;
+    transition: filter 0.15s;
+}
+.logo_social:hover{
+    filter: brightness(2) saturate(0);
+    
+}

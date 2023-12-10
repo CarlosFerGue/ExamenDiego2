@@ -1,0 +1,12 @@
+<lista_tickets>
+	<ticket>
+		<fecha>2023-10-12</fecha>
+		<titular>Gabriel Milagro</titular>
+		<num_tarjeta>7568490387562847</num_tarjeta>
+		<tipo_tarjeta>Visa</tipo_tarjeta>
+	</ticket>
+	<ticket>
+		<id_ticket>12</id_ticket>
+		<fecha>2023-10-12</fecha>
+	</ticket>
+</lista_tickets>

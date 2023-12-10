@@ -1,0 +1,30 @@
+[
+    {
+      "id": 10,
+      "nombre": "Pack Capsulas Intenso",
+      "url": "./IMG/PRODUCTS/cc8.png",
+      "precio": 0.3,
+      "cantidad":3
+    },
+    {
+      "id": 12,
+      "nombre": "Pack Capsulas Forte",
+      "url": "./IMG/PRODUCTS/cc3.png",
+      "precio": 0.45,
+      "cantidad":1
+    },
+    {
+      "id": 10,
+      "nombre": "Pack Capsulas Dolce",
+      "url": "./IMG/PRODUCTS/cc6.png",
+      "precio": 0.65,
+      "cantidad":2
+    },
+    {
+      "id": 15,
+      "nombre": "Coito Mamas",
+      "url": "./IMG/PRODUCTS/cm7.png",
+      "precio": 106.98,
+      "cantidad":5
+    }
+  ]

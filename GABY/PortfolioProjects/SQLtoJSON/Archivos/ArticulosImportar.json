@@ -1,0 +1,12 @@
+[
+	{
+		"nombre":"Maletas",
+		"precio":50,
+		"stock":80
+	}
+	,{
+		"nombre":"Pechuga de pollo",
+		"precio":4,
+		"stock":300
+	}
+]

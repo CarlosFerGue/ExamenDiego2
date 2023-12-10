@@ -1,0 +1,221 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);/*IMPORTAMOS LA FUENTE JEJU GOTHIC*/
+:root{
+    /*Set de colores y fuentes almacenados en variables*/
+    --white: #FFFFFF;
+    --gold: #EFBB02;
+    --heebo: 'Heebo', sans-serif;
+    --black_header: #191919;
+    --black_footer: #0D0D0D;
+    --transparent: rgba(255, 255, 255, 0);
+    --titles: 'Jeju Gothic', sans-serif;
+}
+/*Ponemos fondo al cuerpo y aplicamos por defecto el color y la letra, también eliminamos la scroll bar*/
+body{
+    background-color: #000000;
+    color: var(--white);
+    font-family: var(--heebo);
+    font-style: normal;
+    text-decoration: none;
+}
+body::-webkit-scrollbar {display: none;}
+a{color: inherit;}
+a:hover{color: var(--gold);}
+img{-webkit-user-drag: none;}
+
+/*-------------------------------------------------------ANIMACIONES-------------------------------------------------------*/
+@keyframes slideRight { /*Usada en el #titulo1*/
+    0% {transform: translateX(-5%); opacity: 0;}
+    45% {transform: translateX(-5%);opacity: 0%; }
+    100% {transform: translateX(0);opacity: 1;}
+}
+@keyframes slideUp { /*Usada en el #texto1*/
+    0% {transform: translateY(7%);opacity: 0;}
+    60% {transform: translateY(7%);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes slideDown { /*Usada en el #texto1*/
+    0% {transform: translateY(-7%);opacity: 0;}
+    40% {transform: translateY(-7%);opacity: 0;}
+    100% {transform: translateY(0);opacity: 1;}
+}
+@keyframes fadeIN { /*Usada en el #bg1*/
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*-------------------------------------------------------HEADER-------------------------------------------------------*/
+#header{
+    position: absolute;
+    width: 100%;
+    height: 8.6%;
+    left: 0px;
+    top: 0px;
+    z-index: 15;
+    background: var(--black_header);
+    border-bottom: solid var(--gold) 0.3vh;
+    display: flex;
+    align-items: center;
+}
+#logo_header{
+    float:left;
+    height: 60%;
+    margin-left: 1.6vw;
+
+}
+.buttons_header{
+    float: left;
+    font-weight: 400;
+    font-size: 1vw;
+    text-align: center;
+    color: var(--white);
+    margin-left: 2.2vw;
+    border-top: 1px solid var(--transparent);
+    transition: color 0.3s, border 0.3s;
+    margin-top: 0.5vh;
+}
+.buttons_header:hover{
+    color: var(--gold);
+    border-top: 1px solid var(--gold);
+}
+
+/*-------------------------------------------------------CONTENT------------------------------------------------------*/
+#bg{
+    position: absolute;
+    left: 0;
+    top: 8.9%;
+    width: 100%;
+    height: 91%;
+    background-image: url("../IMG/LOGIN/login_bg.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    filter: blur(1vw) brightness(0.7);
+    z-index: -10;
+}
+#content{
+    position: absolute;
+    width: 36.5vw;
+    height: 32vw;
+    top: calc(50% - 35vw/2 + 20px);
+    left: calc(50% - 36.5vw/2);
+    display: flex;
+    align-items: center;
+}
+
+
+#login{
+    background-color: rgba(20, 20, 20, 0.8);;
+    width: 60%;
+    height: 100%;
+    border-radius: 0.8vw;
+}
+#login_logo{
+    display: block;
+    margin: auto;
+    margin-top: 2.8vw;
+    height: 3.5vw;
+}
+#form{
+    margin: auto;
+    height: 14vw;
+    width: 16.5vw;
+    margin-top: 1.4vw;
+}
+.labels{
+    margin-left: 0.2vw;
+    font-weight: 600;
+    font-size: 1.3vw;
+    color: #FFFFFF;
+}
+.inputs{
+    outline: none;
+    height: 1.2vw;
+    width: 16vw;
+    margin-bottom: 1.2vw;
+    border: 0.2vw solid #EFBB02;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+#button{
+    border: none;
+    height: 2.5vw;
+    width: 16.6vw;
+    color: white;
+    background: linear-gradient(180deg, #EFBB02 0%, rgba(246, 193, 0, 0.696) 100%, #EFBB02 100%);
+    border-radius: 5px;
+    font-family: var(--titles);
+    font-size: 1.1vw;
+    font-weight: 600;
+    margin-top: 0.7vw;
+}
+#button:hover{
+    background: linear-gradient(180deg, #EFBB02 0%, rgba(239, 187, 2, 0.56) 100%, #EFBB02 100%);
+}
+
+#text_clients{
+    padding-top: 11vh;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1vw;
+}
+
+#login_error{
+    color:#FF0000;
+    margin-bottom: 0.3vw;
+    display: none; 
+}
+
+
+#warning{
+    background-color: rgba(255, 255, 255, 0.6);;
+    width: 14.6vw;
+    height: 22vw;
+    border-radius: 0px 8px 8px 0px;
+    text-align: center;
+    color: black;
+}
+
+#text1{
+    margin: auto;
+    margin-top: 2.7vw;
+    left: 0;
+    right: 0;
+    margin-bottom: 1vw;
+    height: 1.5vw;
+    width: 8.5vw;
+    font-size: 1.2vw;
+    border-bottom: 0.4vh solid var(--gold);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);;
+}
+#text2{
+    width: 11vw;
+    margin: auto;
+    left: 0;
+    right: 0;
+    font-weight: 500;
+    font-size: 1vw;
+    line-height: 1.6vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+#text3{
+    font-size: 1vw;
+    margin-top: 0.6vw;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#text4{
+    margin-top: 0.3vw;
+    font-weight: 600;
+    font-size: 1.6vw;
+    color: #EFBB02;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+
