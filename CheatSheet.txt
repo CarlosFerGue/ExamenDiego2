@@ -89,6 +89,63 @@ END aumento_salario;
 execute aumento_salario;
 
 
+-Para borrarlo usamos 
+drop procedure aumento_salario;
+
+---------------------------------------------------------------------
+
+-Ejemplo con parametros de entrada (in), modificar salarios.
+
+create or replace procedure aumentasueldo(anio in number, porcentaje in number)
+as
+begin 
+update empleados set sueldo=sueldo+(sueldo*porcentaje/100)
+where (extract(year from current_date)-extract(year from fechaingreso))>anio;
+end aumentasueldo;
+
+execute aumentasueldo(10,20);
+
+-Ejemplo añadir empleados:
+
+
+create or replace procedure ingresoemple(docu in char, nom in varchar2, ape in varchar2)
+as
+begin
+    insert into empleados values(docu, nom, ape, null, null);
+    end ingresoemple;
+    
+    
+execute ingresoemple('3333333','Emilio','Perez');
+
+drop procedure ingresoemple;
+
+-----------------------------------------------------------------
+
+-Ejemplo con variables
+
+-- Crear la tabla
+CREATE TABLE libros (
+    id_libro NUMBER PRIMARY KEY,
+    titulo VARCHAR2(100),
+    autor VARCHAR2(50),
+    precio NUMBER
+);
+
+-- Inserts
+INSERT INTO libros (id_libro, titulo, autor, precio) VALUES (1, 'Libro 1', 'Autor 1', 20.50);
+INSERT INTO libros (id_libro, titulo, autor, precio) VALUES (2, 'Libro 2', 'Autor 2', 15.75);
+INSERT INTO libros (id_libro, titulo, autor, precio) VALUES (3, 'Libro 3', 'Autor 3', 30.00);
+
+create or replace procedure autorlibro(atitulo in varchar2)
+as
+v_autor varchar2(20);
+begin	
+	select autor into v_autor from libros where titulo=atitulo;
+	insert into tabal1
+	select titulo, precio from libros
+	where autor=v_autor;
+end autorlibro;
+
 **********************************************************************
 
 -PROCEDURES: Bloque de codigo que contiene instrucciones SQL y PLSQL
