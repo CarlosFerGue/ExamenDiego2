@@ -56,7 +56,8 @@ EXECUTE saludo;
 
 	-Con eso lo ejecutamos
 
-**********************************************************************
+*****************************PROCEDIMIENTOS ALMACENADOS*****************************************
+
 
 -Ejemplo Procedimiento almacenado en el que accedemos a una tabla
 y le sumamos a los salarios un 10% de lo que son
@@ -161,6 +162,11 @@ END;
 /
 
 select * from tabla1;
+
+
+*****************************	FUNCIONES	*****************************************
+
+
 **********************************************************************
 
 -PROCEDURES: Bloque de codigo que contiene instrucciones SQL y PLSQL
@@ -737,4 +743,192 @@ BEGIN
 END;
 /
 
--Ejercicios mas comunes de PL/SQL
+****************************	USOS	***********************************************
+-FOR
+-- Ejemplo de bucle FOR
+DECLARE
+  n NUMBER;
+BEGIN
+  FOR i IN 1..5 LOOP
+    n := i * 2;
+    DBMS_OUTPUT.PUT_LINE('El doble de ' || i || ' es ' || n);
+  END LOOP;
+END;
+/
+
+-WHILE
+-- Ejemplo de bucle WHILE
+DECLARE
+  i NUMBER := 1;
+  n NUMBER;
+BEGIN
+  WHILE i <= 5 LOOP
+    n := i * 2;
+    DBMS_OUTPUT.PUT_LINE('El doble de ' || i || ' es ' || n);
+    i := i + 1;
+  END LOOP;
+END;
+/
+
+
+-IF
+-- Ejemplo de estructura IF
+DECLARE
+  x NUMBER := 10;
+BEGIN
+  IF x > 0 THEN
+    DBMS_OUTPUT.PUT_LINE('x es positivo');
+  ELSIF x < 0 THEN
+    DBMS_OUTPUT.PUT_LINE('x es negativo');
+  ELSE
+    DBMS_OUTPUT.PUT_LINE('x es cero');
+  END IF;
+END;
+/
+
+
+********************Ejercicios mas comunes de PL/SQL************************
+
+1. Procedimiento de Inserción: Crea un procedimiento que 
+acepte parámetros para insertar datos en una tabla específica.
+
+CREATE OR REPLACE PROCEDURE InsertarDatos(p_nombre VARCHAR2, p_valor NUMBER) AS
+BEGIN
+  INSERT INTO MiTabla (nombre, valor) VALUES (p_nombre, p_valor);
+END InsertarDatos;
+/
+
+----------------------------------------------------------------------------
+2. Función de Suma: Escribe una función que sume los valores de una columna 
+en una tabla y devuelva el resultado.
+
+CREATE OR REPLACE FUNCTION SumaColumna RETURN NUMBER IS
+  v_resultado NUMBER;
+BEGIN
+  SELECT SUM(columna) INTO v_resultado FROM MiTabla;
+  RETURN v_resultado;
+END SumaColumna;
+/
+
+----------------------------------------------------------------------------
+3. Procedimiento de Actualización: Crea un procedimiento que acepte 
+parámetros para actualizar datos en una tabla según una condición.
+
+CREATE OR REPLACE PROCEDURE ActualizarDatos(p_condicion VARCHAR2, p_nuevo_valor NUMBER) AS
+BEGIN
+  UPDATE MiTabla SET columna = p_nuevo_valor WHERE condicion = p_condicion;
+END ActualizarDatos;
+/
+
+----------------------------------------------------------------------------
+4. Manejo de Excepciones: Desarrolla un bloque PL/SQL que maneje excepciones y 
+muestre mensajes personalizados en función del tipo de error.
+
+DECLARE
+  v_valor NUMBER;
+BEGIN
+  SELECT columna INTO v_valor FROM MiTabla WHERE condicion = 'alguna condición';
+  DBMS_OUTPUT.PUT_LINE('Valor encontrado: ' || v_valor);
+EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    DBMS_OUTPUT.PUT_LINE('No se encontraron datos.');
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('Error inesperado.');
+END;
+/
+
+
+----------------------------------------------------------------------------
+5. Cursor Explícito: Utiliza un cursor explícito para recorrer y mostrar 
+datos de una tabla.
+
+DECLARE
+  CURSOR mi_cursor IS SELECT columna FROM MiTabla;
+  v_valor NUMBER;
+BEGIN
+  OPEN mi_cursor;
+  LOOP
+    FETCH mi_cursor INTO v_valor;
+    EXIT WHEN mi_cursor%NOTFOUND;
+    DBMS_OUTPUT.PUT_LINE('Valor: ' || v_valor);
+  END LOOP;
+  CLOSE mi_cursor;
+END;
+/
+
+----------------------------------------------------------------------------
+6. Procedimiento de Eliminación: Crea un procedimiento que acepte parámetros 
+para eliminar registros de una tabla según una condición.
+
+CREATE OR REPLACE PROCEDURE EliminarDatos(p_condicion VARCHAR2) AS
+BEGIN
+  DELETE FROM MiTabla WHERE condicion = p_condicion;
+END EliminarDatos;
+/
+
+----------------------------------------------------------------------------
+7. Función con Cursor: Escribe una función que utilice un cursor para procesar 
+datos y devolver un resultado basado en ciertos criterios.
+
+CREATE OR REPLACE FUNCTION ObtenerDatos RETURN VARCHAR2 IS
+  CURSOR mi_cursor IS SELECT columna FROM MiTabla;
+  v_valor VARCHAR2(100);
+BEGIN
+  OPEN mi_cursor;
+  FETCH mi_cursor INTO v_valor;
+  CLOSE mi_cursor;
+  RETURN v_valor;
+END ObtenerDatos;
+/
+
+
+----------------------------------------------------------------------------
+8. Procedimiento con Transacción: Desarrolla un procedimiento que realice varias 
+operaciones dentro de una transacción y que pueda ser confirmada o revertida 
+según un parámetro.
+
+CREATE OR REPLACE PROCEDURE ProcesoConTransaccion(p_confirmar BOOLEAN) AS
+BEGIN
+  BEGIN
+    -- Operaciones dentro de la transacción
+    INSERT INTO MiTabla (columna) VALUES ('valor1');
+    UPDATE OtraTabla SET columna = 'nuevo_valor' WHERE condicion = 'alguna_condicion';
+    -- ... más operaciones
+
+    -- Confirmar o revertir la transacción según el parámetro
+    IF p_confirmar THEN
+      COMMIT;
+    ELSE
+      ROLLBACK;
+    END IF;
+  EXCEPTION
+    WHEN OTHERS THEN
+      -- Manejo de errores
+      ROLLBACK;
+  END;
+END ProcesoConTransaccion;
+/
+
+----------------------------------------------------------------------------
+9. Función con Manejo de Fechas: Crea una función que acepte fechas como 
+parámetros y realice cálculos basados en esas fechas.
+
+CREATE OR REPLACE FUNCTION CalcularDiferenciaFechas(p_fecha1 DATE, p_fecha2 DATE) RETURN NUMBER IS
+  v_diferencia NUMBER;
+BEGIN
+  v_diferencia := p_fecha2 - p_fecha1;
+  RETURN v_diferencia;
+END CalcularDiferenciaFechas;
+/
+
+----------------------------------------------------------------------------
+10. Bloque Anónimo con Trigger: Diseña un bloque anónimo que active un trigger 
+después de insertar datos en una tabla, realizando alguna acción específica.
+
+DECLARE
+  v_valor NUMBER;
+BEGIN
+  INSERT INTO MiTabla (columna) VALUES ('nuevo_valor');
+  -- Aquí se activaría el trigger asociado a la tabla
+END;
+/
