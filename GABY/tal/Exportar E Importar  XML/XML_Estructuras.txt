@@ -1,0 +1,42 @@
+///////////////////////////ARTÍCULOS/////////////////////////////
+<lista_articulos>
+    <articulo>
+        <id_articulo>1</id_articulo>
+        <nombre>Articulo 1</nombre>
+        <precio>10.00</precio>
+        <stock>100</stock>
+    </articulo>
+    <!-- Puedes agregar más registros según sea necesario -->
+</lista_articulos>
+
+
+///////////////////////////ARTÍCULOS////////////////////////////
+<lista_particulares>
+    <particular>
+        <id_particular>1</id_particular>
+        <nombre>Juan Pérez</nombre>
+        <dni>12345678A</dni>
+        <telefono>123456789</telefono>
+        <direccion>Calle Principal, 123</direccion>
+    </particular>
+    <!-- Puedes agregar más registros según sea necesario -->
+</lista_particulares>
+
+/////////////////////////////TICKETS/////////////////////////////
+<lista_tickets>
+	<ticket>
+		<id_ticket>5</id_ticket>
+		<fecha>2023-10-12</fecha>
+		<titular>Gabriel Milagro</titular>
+		<num_tarjeta>7568490387562847</num_tarjeta>
+		<tipo_tarjeta>Visa</tipo_tarjeta>
+	</ticket>
+</lista_tickets>
+
+////////////////////////DIRECCIONES ENVÍO////////////////////////
+<lista_direcciones>
+	<direccion>
+		<id_direccion>5</id_direccion>
+		<nombre>2023-10-12</nombre>
+	</direccion>
+</lista_direcciones>

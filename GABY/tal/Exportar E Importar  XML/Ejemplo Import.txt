@@ -1,0 +1,51 @@
+import javax.xml.parsers.*;
+import org.w3c.dom.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProcesarXML {
+
+    public static NodeList obtenerParticularesDesdeXML(String rutaArchivo) {
+        NodeList listaParticulares = null;
+
+        try {
+            // Parsear el XML
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(rutaArchivo);
+            doc.getDocumentElement().normalize();
+
+            // Obtener la lista de nodos "particular"
+            listaParticulares = doc.getElementsByTagName("particular");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return listaParticulares;
+    }
+
+    public static void main(String[] args) {
+        NodeList listaParticulares = obtenerParticularesDesdeXML("datos.xml");
+
+        // Iterar sobre la lista de "particular"
+        for (int i = 0; i < listaParticulares.getLength(); i++) {
+            Node particularNode = listaParticulares.item(i);
+            if (particularNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element elemento = (Element) particularNode;
+
+                // Obtener los datos
+                String nombre = elemento.getElementsByTagName("nombre").item(0).getTextContent();
+                String telefono = elemento.getElementsByTagName("telefono").item(0).getTextContent();
+                String dni = elemento.getElementsByTagName("dni").item(0).getTextContent();
+                String direccion = elemento.getElementsByTagName("direccion").item(0).getTextContent();
+
+                // Imprimir los datos
+                System.out.println("Nombre: " + nombre);
+                System.out.println("Teléfono: " + telefono);
+                System.out.println("DNI: " + dni);
+                System.out.println("Dirección: " + direccion);
+                System.out.println();
+            }
+        }
+    }
+}

@@ -165,7 +165,21 @@ select * from tabla1;
 
 
 *****************************	FUNCIONES	*****************************************
+-Ejemplo de funcion que le pasas un valor y te devuelve el mismo multiplicado x2
 
+create or replace function f_prueba(valor number)
+	return number
+	is
+	begin 
+		return valor*2;
+	end;
+
+select f_prueba(2) as total from dual;
+--as total es para asignarle un nombre a la variable
+--from dual es porque no esta en ninguna tabla
+--y eso hace que se genere una de prueba
+
+-----------------------------------------------------------------------
 
 **********************************************************************
 
