@@ -165,7 +165,8 @@ select * from tabla1;
 
 
 *****************************	FUNCIONES	*****************************************
--Ejemplo de funcion que le pasas un valor y te devuelve el mismo multiplicado x2
+-Ejemplo de funcion que le pasas un valor y te devuelve el mismo 
+multiplicado x2
 
 create or replace function f_prueba(valor number)
 	return number
@@ -178,6 +179,25 @@ select f_prueba(2) as total from dual;
 --as total es para asignarle un nombre a la variable
 --from dual es porque no esta en ninguna tabla
 --y eso hace que se genere una de prueba
+
+
+-Funcion y como usarla que te dice si con la tabla libros de arriba
+segun el precio un libro es mas caro o mas barato
+
+create or replace function f_costo(valor number)
+return varchar
+is 
+    costo varchar(20);
+    begin
+        costo:='';
+        if valor<=20 then
+        costo:='economico';
+        else costo:='costoso';
+        end if;
+        return costo;
+end;
+
+select titulo, autor, precio, f_costo(precio) from libros;
 
 -----------------------------------------------------------------------
 
